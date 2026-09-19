@@ -2,12 +2,70 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>aerocontinuity</title>
+    <meta name="description" content="Project Nova landing page" />
+    <title>Project Nova</title>
+    <style>
+      :root {
+        --bg: #07111f;
+        --panel: #101d2d;
+        --panel-2: #16273d;
+        --text: #edf6ff;
+        --muted: #9bb5d3;
+        --accent: #7dd3fc;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        background: radial-gradient(circle at top, #12263f 0%, var(--bg) 60%);
+        color: var(--text);
+      }
+
+      main {
+        width: min(90vw, 760px);
+        text-align: center;
+        padding: 4rem 2rem;
+        background: rgba(16, 29, 45, 0.8);
+        border: 1px solid rgba(125, 211, 252, 0.25);
+        border-radius: 24px;
+        box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+      }
+
+      .eyebrow {
+        margin: 0 0 1rem;
+        color: var(--accent);
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        font-size: 0.72rem;
+        font-weight: 700;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.5rem, 7vw, 5rem);
+        line-height: 0.95;
+      }
+
+      p {
+        margin: 1.2rem auto 0;
+        max-width: 600px;
+        font-size: 1.08rem;
+        line-height: 1.7;
+        color: var(--muted);
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <main>
+      <p class="eyebrow">Project Nova</p>
+      <h1>Project Nova</h1>
+      <p>Built for forward motion. This page is now live and ready for the next update.</p>
+    </main>
   </body>
 </html>
